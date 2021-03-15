@@ -1,0 +1,14 @@
+[Unit]
+Description=autoffmpeg
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /usr/local/bin/autoffmpeg.sh
+RemainAfterExit=true
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
