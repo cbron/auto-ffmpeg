@@ -1,6 +1,6 @@
 # auto-ffmpeg
 
-Watch a directory for new TS file's in any child directory and re-mux them to mkv.
+Watch a directory for new `.ts` file's in any child directory and re-mux them to `.mkv`.
 
 ### Get started
 

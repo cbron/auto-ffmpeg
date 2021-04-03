@@ -21,10 +21,8 @@ while read -r fname
 		sleep $SLEEP
 
 		# This just re-muxes to mkv, no trasncoding
-		ffmpeg -i "${fname}" -c copy "${newPath}"
+		ffmpeg -hide_banner -loglevel error -i "${fname}" -c copy "${newPath}"
 
 		echo "converted ${newPath##*/}"
 	fi
 	done
-
-
